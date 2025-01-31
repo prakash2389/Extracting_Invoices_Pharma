@@ -9,7 +9,7 @@ from anthropic import Anthropic, APIError
 
 openai.api_type = os.getenv("OPENAI_API_KEY")
 openai.api_base = os.getenv("OPENAI_API_KEY")
-openai.api_version = os.getenv("OPENAI_API_KEY")
+openai.api_version = "2023-03-15-preview"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 claude_client = Anthropic(api_key=os.getenv("Anthropic_API_KEY"))
